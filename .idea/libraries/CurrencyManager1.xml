@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CurrencyManager1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../CurrencyManager/out/artifacts/CurrencyManager/CurrencyManager.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

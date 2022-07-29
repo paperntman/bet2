@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+
+    implementation group: 'net.dv8tion', name: 'JDA', version: '5.0.0-alpha.17'
+
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+// https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv
+    implementation group: 'io.github.cdimascio', name: 'java-dotenv', version: '5.2.2'
+
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.4.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
